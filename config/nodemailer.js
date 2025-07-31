@@ -1,5 +1,6 @@
 import nodemailer  from 'nodemailer';
 
+console.log('Nodemailer env ', process.env.SMTP_USER)
 const transporter = nodemailer.createTransport({
   host: 'smtp-relay.brevo.com',
   port: 587,
